@@ -1,0 +1,1462 @@
+[
+  {
+    "value": "85.11.161.198",
+    "type": "IPv4",
+    "source": "OTX",
+    "description": "User interaction with a ClickFix-style phishing site resulted in execution of an obfuscated PowerShell command",
+    "tags": [
+      "phishing",
+      "lumma stealer",
+      "powershell",
+      "information stealer",
+      "credential theft",
+      "hijackloader",
+      "dll sideloading",
+      "lummastealer",
+      "clickfix"
+    ]
+  },
+  {
+    "value": "http://robinhuds.com:9658/",
+    "type": "URL",
+    "source": "OTX",
+    "description": "User interaction with a ClickFix-style phishing site resulted in execution of an obfuscated PowerShell command",
+    "tags": [
+      "phishing",
+      "lumma stealer",
+      "powershell",
+      "information stealer",
+      "credential theft",
+      "hijackloader",
+      "dll sideloading",
+      "lummastealer",
+      "clickfix"
+    ]
+  },
+  {
+    "value": "http://85.11.161.198:6600/qffww8ph/2DTYOKUEN.msi",
+    "type": "URL",
+    "source": "OTX",
+    "description": "User interaction with a ClickFix-style phishing site resulted in execution of an obfuscated PowerShell command",
+    "tags": [
+      "phishing",
+      "lumma stealer",
+      "powershell",
+      "information stealer",
+      "credential theft",
+      "hijackloader",
+      "dll sideloading",
+      "lummastealer",
+      "clickfix"
+    ]
+  },
+  {
+    "value": "robinhuds.com",
+    "type": "domain",
+    "source": "OTX",
+    "description": "User interaction with a ClickFix-style phishing site resulted in execution of an obfuscated PowerShell command",
+    "tags": [
+      "phishing",
+      "lumma stealer",
+      "powershell",
+      "information stealer",
+      "credential theft",
+      "hijackloader",
+      "dll sideloading",
+      "lummastealer",
+      "clickfix"
+    ]
+  },
+  {
+    "value": "kyblogtz6k3jtxnjjvluee5ec4g3zcnvyvbgsnq5thumphmqidkt7xid.onion",
+    "type": "domain",
+    "source": "OTX",
+    "description": "Kyber ransomware is not just post-quantum name-dropping",
+    "tags": [
+      "post-quantum cryptography",
+      "x25519",
+      "aes-ctr encryption",
+      "rust ransomware",
+      "hybrid encryption",
+      "file encryption",
+      "kyber",
+      "kyber1024"
+    ]
+  },
+  {
+    "value": "http://mlnmlnnrdhcaddwll4zqvfd2vyqsgtgj473gjoehwna2v4sizdukheyd.onion/chat/f9e1d038b1f5220e888b56e97881937f",
+    "type": "URL",
+    "source": "OTX",
+    "description": "Kyber ransomware is not just post-quantum name-dropping",
+    "tags": [
+      "post-quantum cryptography",
+      "x25519",
+      "aes-ctr encryption",
+      "rust ransomware",
+      "hybrid encryption",
+      "file encryption",
+      "kyber",
+      "kyber1024"
+    ]
+  },
+  {
+    "value": "mlnmlnnrdhcaddwll4zqvfd2vyqsgtgj473gjoehwna2v4sizdukheyd.onion",
+    "type": "domain",
+    "source": "OTX",
+    "description": "Kyber ransomware is not just post-quantum name-dropping",
+    "tags": [
+      "post-quantum cryptography",
+      "x25519",
+      "aes-ctr encryption",
+      "rust ransomware",
+      "hybrid encryption",
+      "file encryption",
+      "kyber",
+      "kyber1024"
+    ]
+  },
+  {
+    "value": "jsonserv.biz",
+    "type": "domain",
+    "source": "OTX",
+    "description": "KYCShadow: An Android Banking Malware Exploiting Fake KYC Workflows for Credential and OTP Theft",
+    "tags": [
+      "india targeting",
+      "android banking trojan",
+      "otp theft",
+      "vpn manipulation",
+      "kycshadow",
+      "whatsapp distribution",
+      "firebase c2",
+      "credential theft",
+      "sms interception"
+    ]
+  },
+  {
+    "value": "jsonserv.xyz",
+    "type": "domain",
+    "source": "OTX",
+    "description": "KYCShadow: An Android Banking Malware Exploiting Fake KYC Workflows for Credential and OTP Theft",
+    "tags": [
+      "india targeting",
+      "android banking trojan",
+      "otp theft",
+      "vpn manipulation",
+      "kycshadow",
+      "whatsapp distribution",
+      "firebase c2",
+      "credential theft",
+      "sms interception"
+    ]
+  },
+  {
+    "value": "jsonapi.biz",
+    "type": "domain",
+    "source": "OTX",
+    "description": "KYCShadow: An Android Banking Malware Exploiting Fake KYC Workflows for Credential and OTP Theft",
+    "tags": [
+      "india targeting",
+      "android banking trojan",
+      "otp theft",
+      "vpn manipulation",
+      "kycshadow",
+      "whatsapp distribution",
+      "firebase c2",
+      "credential theft",
+      "sms interception"
+    ]
+  },
+  {
+    "value": "https://jsonapi.biz",
+    "type": "URL",
+    "source": "OTX",
+    "description": "KYCShadow: An Android Banking Malware Exploiting Fake KYC Workflows for Credential and OTP Theft",
+    "tags": [
+      "india targeting",
+      "android banking trojan",
+      "otp theft",
+      "vpn manipulation",
+      "kycshadow",
+      "whatsapp distribution",
+      "firebase c2",
+      "credential theft",
+      "sms interception"
+    ]
+  },
+  {
+    "value": "45.33.32.156",
+    "type": "IPv4",
+    "source": "VirusTotal",
+    "risk_score": 4,
+    "description": "Detected by 4/91 VT engines",
+    "tags": [
+      "virustotal"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "40.124.172.38",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "92.118.39.195",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "RO"
+  },
+  {
+    "value": "2.57.122.196",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "RO"
+  },
+  {
+    "value": "193.176.31.194",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "NL"
+  },
+  {
+    "value": "185.216.145.168",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "GB"
+  },
+  {
+    "value": "5.226.140.121",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "GB"
+  },
+  {
+    "value": "208.69.161.214",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "2.57.122.189",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "RO"
+  },
+  {
+    "value": "221.156.126.1",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "KR"
+  },
+  {
+    "value": "195.178.110.135",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "NL"
+  },
+  {
+    "value": "85.217.140.6",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "FR"
+  },
+  {
+    "value": "20.220.233.65",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "CA"
+  },
+  {
+    "value": "183.94.33.245",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "CN"
+  },
+  {
+    "value": "69.5.169.204",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "GB"
+  },
+  {
+    "value": "85.11.183.19",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "GB"
+  },
+  {
+    "value": "5.226.140.49",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "GB"
+  },
+  {
+    "value": "104.252.175.235",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "92.118.39.196",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "RO"
+  },
+  {
+    "value": "5.226.140.95",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "GB"
+  },
+  {
+    "value": "118.194.251.75",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "TH"
+  },
+  {
+    "value": "2.57.122.191",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "RO"
+  },
+  {
+    "value": "195.206.182.220",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "GB"
+  },
+  {
+    "value": "217.146.80.109",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "GB"
+  },
+  {
+    "value": "49.88.156.34",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "CN"
+  },
+  {
+    "value": "2.57.122.192",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "RO"
+  },
+  {
+    "value": "2.57.122.177",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "RO"
+  },
+  {
+    "value": "167.71.239.213",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "IN"
+  },
+  {
+    "value": "103.154.231.122",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "ID"
+  },
+  {
+    "value": "45.148.10.157",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "NL"
+  },
+  {
+    "value": "188.240.59.36",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "GB"
+  },
+  {
+    "value": "103.118.28.15",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "VN"
+  },
+  {
+    "value": "5.226.140.110",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "GB"
+  },
+  {
+    "value": "45.148.10.152",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "NL"
+  },
+  {
+    "value": "79.124.60.146",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "BG"
+  },
+  {
+    "value": "213.209.159.159",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "DE"
+  },
+  {
+    "value": "36.103.243.179",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "CN"
+  },
+  {
+    "value": "45.148.10.246",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "NL"
+  },
+  {
+    "value": "146.70.194.228",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "FR"
+  },
+  {
+    "value": "103.253.27.210",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "SG"
+  },
+  {
+    "value": "2.57.122.195",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "RO"
+  },
+  {
+    "value": "199.203.54.15",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "IL"
+  },
+  {
+    "value": "77.83.39.117",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "NL"
+  },
+  {
+    "value": "183.171.4.138",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "MY"
+  },
+  {
+    "value": "121.164.135.251",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "KR"
+  },
+  {
+    "value": "45.43.58.106",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "77.53.236.189",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "SE"
+  },
+  {
+    "value": "107.167.34.125",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "79.124.59.78",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "BG"
+  },
+  {
+    "value": "45.148.10.121",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "NL"
+  },
+  {
+    "value": "199.45.155.74",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "HK"
+  },
+  {
+    "value": "211.228.218.47",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "KR"
+  },
+  {
+    "value": "64.227.99.233",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "2.57.122.238",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "RO"
+  },
+  {
+    "value": "51.159.149.103",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "FR"
+  },
+  {
+    "value": "196.188.168.148",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "ET"
+  },
+  {
+    "value": "66.132.172.110",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "196.188.187.85",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "ET"
+  },
+  {
+    "value": "106.12.61.168",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "CN"
+  },
+  {
+    "value": "2.57.121.112",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "RO"
+  },
+  {
+    "value": "79.124.58.142",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "BG"
+  },
+  {
+    "value": "102.219.126.124",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "AO"
+  },
+  {
+    "value": "2.57.122.190",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "RO"
+  },
+  {
+    "value": "196.188.187.21",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "ET"
+  },
+  {
+    "value": "196.41.207.112",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "ZA"
+  },
+  {
+    "value": "120.36.82.210",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "CN"
+  },
+  {
+    "value": "143.110.142.50",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "151.243.11.37",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "DE"
+  },
+  {
+    "value": "196.188.93.169",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "ET"
+  },
+  {
+    "value": "112.26.74.90",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "CN"
+  },
+  {
+    "value": "45.227.254.170",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "LT"
+  },
+  {
+    "value": "111.26.95.120",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "CN"
+  },
+  {
+    "value": "112.5.76.239",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "CN"
+  },
+  {
+    "value": "92.118.39.197",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "RO"
+  },
+  {
+    "value": "162.240.167.229",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "78.128.114.102",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "BG"
+  },
+  {
+    "value": "135.237.126.84",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "14.29.214.161",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "CN"
+  },
+  {
+    "value": "68.183.229.3",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "SG"
+  },
+  {
+    "value": "49.124.153.14",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "MY"
+  },
+  {
+    "value": "81.30.98.49",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "IR"
+  },
+  {
+    "value": "45.94.31.100",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "NL"
+  },
+  {
+    "value": "117.184.105.34",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "CN"
+  },
+  {
+    "value": "193.24.211.95",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "BG"
+  },
+  {
+    "value": "85.217.140.35",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "FR"
+  },
+  {
+    "value": "104.243.35.94",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "183.111.166.18",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "KR"
+  },
+  {
+    "value": "71.6.199.23",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "172.245.16.13",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "182.16.41.74",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "HK"
+  },
+  {
+    "value": "172.185.24.228",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "178.128.199.27",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "DE"
+  },
+  {
+    "value": "184.70.159.86",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "CA"
+  },
+  {
+    "value": "213.209.159.158",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "DE"
+  },
+  {
+    "value": "193.46.255.86",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "RO"
+  },
+  {
+    "value": "176.65.132.17",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "DE"
+  },
+  {
+    "value": "45.142.193.12",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "NL"
+  },
+  {
+    "value": "40.77.167.131",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "85.217.140.42",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "FR"
+  },
+  {
+    "value": "52.165.88.92",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "US"
+  },
+  {
+    "value": "159.100.13.237",
+    "type": "IPv4",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "description": "Reported 0 times",
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "country": "DE"
+  },
+  {
+    "value": "162.243.103.246",
+    "type": "IPv4",
+    "source": "Feodo_Blocklist",
+    "risk_score": 90,
+    "description": "C2 botnet IP from Feodo Tracker",
+    "tags": [
+      "botnet",
+      "c2",
+      "free_feed"
+    ],
+    "country": ""
+  },
+  {
+    "value": "178.62.3.223",
+    "type": "IPv4",
+    "source": "Feodo_Blocklist",
+    "risk_score": 90,
+    "description": "C2 botnet IP from Feodo Tracker",
+    "tags": [
+      "botnet",
+      "c2",
+      "free_feed"
+    ],
+    "country": ""
+  },
+  {
+    "value": "27.133.154.218",
+    "type": "IPv4",
+    "source": "Feodo_Blocklist",
+    "risk_score": 90,
+    "description": "C2 botnet IP from Feodo Tracker",
+    "tags": [
+      "botnet",
+      "c2",
+      "free_feed"
+    ],
+    "country": ""
+  },
+  {
+    "value": "34.204.119.63",
+    "type": "IPv4",
+    "source": "Feodo_Blocklist",
+    "risk_score": 90,
+    "description": "C2 botnet IP from Feodo Tracker",
+    "tags": [
+      "botnet",
+      "c2",
+      "free_feed"
+    ],
+    "country": ""
+  },
+  {
+    "value": "50.16.16.211",
+    "type": "IPv4",
+    "source": "Feodo_Blocklist",
+    "risk_score": 90,
+    "description": "C2 botnet IP from Feodo Tracker",
+    "tags": [
+      "botnet",
+      "c2",
+      "free_feed"
+    ],
+    "country": ""
+  }
+]

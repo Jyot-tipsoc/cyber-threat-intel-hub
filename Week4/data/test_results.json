@@ -1,0 +1,134 @@
+{
+  "timestamp": "2026-04-30T09:06:45Z",
+  "total": 25,
+  "passed": 22,
+  "failed": 3,
+  "score": "88%",
+  "results": [
+    {
+      "test": "raw_indicators.json exists",
+      "status": "\u2705 PASS",
+      "message": "Run feed_collector.py first"
+    },
+    {
+      "test": "raw_indicators.json not empty",
+      "status": "\u2705 PASS",
+      "message": "File is empty"
+    },
+    {
+      "test": "Has 10+ indicators",
+      "status": "\u2705 PASS",
+      "message": "Only 117 indicators found"
+    },
+    {
+      "test": "Indicators have 'value' field",
+      "status": "\u2705 PASS",
+      "message": "Some indicators missing 'value'"
+    },
+    {
+      "test": "Indicators have 'source' field",
+      "status": "\u2705 PASS",
+      "message": "Some indicators missing 'source'"
+    },
+    {
+      "test": "Has 3+ OSINT sources",
+      "status": "\u2705 PASS",
+      "message": "Only 4 sources: {'AbuseIPDB', 'Feodo_Blocklist', 'VirusTotal', 'OTX'}"
+    },
+    {
+      "test": "normalized_indicators.json exists",
+      "status": "\u2705 PASS",
+      "message": "Run normalizer.py first"
+    },
+    {
+      "test": "Normalized file not empty",
+      "status": "\u2705 PASS",
+      "message": "File is empty"
+    },
+    {
+      "test": "Has required fields",
+      "status": "\u274c FAIL",
+      "message": "Missing required fields"
+    },
+    {
+      "test": "Risk scores are 0-100",
+      "status": "\u2705 PASS",
+      "message": "Invalid risk scores found"
+    },
+    {
+      "test": "Severity labels correct",
+      "status": "\u274c FAIL",
+      "message": "Invalid severity labels"
+    },
+    {
+      "test": "No duplicate IDs",
+      "status": "\u2705 PASS",
+      "message": "Duplicate IDs found"
+    },
+    {
+      "test": "Has HIGH risk indicators",
+      "status": "\u274c FAIL",
+      "message": "No HIGH risk indicators found"
+    },
+    {
+      "test": "IP addresses are valid format",
+      "status": "\u2705 PASS",
+      "message": "0 invalid IPs found"
+    },
+    {
+      "test": "blocked_ips.json exists",
+      "status": "\u2705 PASS",
+      "message": "Run policy_enforcer.py first"
+    },
+    {
+      "test": "Blocked list not empty",
+      "status": "\u2705 PASS",
+      "message": "No IPs have been blocked"
+    },
+    {
+      "test": "Blocked entries have required fields",
+      "status": "\u2705 PASS",
+      "message": "Missing fields in blocked entries"
+    },
+    {
+      "test": "Has 10+ blocked IPs",
+      "status": "\u2705 PASS",
+      "message": "Only 105 IPs blocked"
+    },
+    {
+      "test": "enforcement_log.json exists",
+      "status": "\u2705 PASS",
+      "message": "Run policy_enforcer.py first"
+    },
+    {
+      "test": "Log has BLOCK entries",
+      "status": "\u2705 PASS",
+      "message": "No BLOCK entries in log"
+    },
+    {
+      "test": "Log entries have timestamps",
+      "status": "\u2705 PASS",
+      "message": "Missing timestamps in log"
+    },
+    {
+      "test": "alert_report.json exists",
+      "status": "\u2705 PASS",
+      "message": "Run alert_system.py first"
+    },
+    {
+      "test": "Report has summary section",
+      "status": "\u2705 PASS",
+      "message": "Missing summary section"
+    },
+    {
+      "test": "Report has by_source breakdown",
+      "status": "\u2705 PASS",
+      "message": "Missing source breakdown"
+    },
+    {
+      "test": "Report has generated_at timestamp",
+      "status": "\u2705 PASS",
+      "message": "Missing timestamp"
+    }
+  ]
+}

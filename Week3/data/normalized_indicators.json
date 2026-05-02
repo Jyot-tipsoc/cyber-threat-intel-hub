@@ -1,0 +1,1952 @@
+[
+  {
+    "id": "ce38c39eac9a4dc7",
+    "value": "40.124.172.38",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "1a96536872b86f58",
+    "value": "92.118.39.195",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "RO",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "0d8be483cd1db770",
+    "value": "2.57.122.196",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "RO",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "17030f29bfe105ec",
+    "value": "193.176.31.194",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "NL",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "ef341fed6f99f065",
+    "value": "185.216.145.168",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "GB",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "49a6296e66fd23c8",
+    "value": "5.226.140.121",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "GB",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "06fd095798fa19cb",
+    "value": "208.69.161.214",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "0a472cbdf9781f76",
+    "value": "2.57.122.189",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "RO",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "916c2e949586e0c9",
+    "value": "221.156.126.1",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "KR",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "1ae30876667ce54b",
+    "value": "195.178.110.135",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "NL",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "d971324e11347b49",
+    "value": "85.217.140.6",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "FR",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "82c7c8439f8281e4",
+    "value": "20.220.233.65",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "CA",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "8a664e7701a9d979",
+    "value": "183.94.33.245",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "CN",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "5fd516c4f6412342",
+    "value": "69.5.169.204",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "GB",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "43e07672742b4c94",
+    "value": "85.11.183.19",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "GB",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "6b82700a3770751d",
+    "value": "5.226.140.49",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "GB",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "db91eb4726195f42",
+    "value": "104.252.175.235",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "386f4c66cf3e35e0",
+    "value": "92.118.39.196",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "RO",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "dd2e8a99e4847cfc",
+    "value": "5.226.140.95",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "GB",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "9afd33a84363393b",
+    "value": "118.194.251.75",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "TH",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "6a132a9f6b2ec4f4",
+    "value": "2.57.122.191",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "RO",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "ead5d8f50e4b59e1",
+    "value": "195.206.182.220",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "GB",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "4eebe4a9e4f739ab",
+    "value": "217.146.80.109",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "GB",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "ca22fe9b273c1190",
+    "value": "49.88.156.34",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "CN",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "30ba815e1cccf8ce",
+    "value": "2.57.122.192",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "RO",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "09ee711614ff191a",
+    "value": "2.57.122.177",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "RO",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "97ae008b85284394",
+    "value": "167.71.239.213",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "IN",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "5110b99df92d78db",
+    "value": "103.154.231.122",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "ID",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "52cfee4df1465fb4",
+    "value": "45.148.10.157",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "NL",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "2b287601d1a25e0e",
+    "value": "188.240.59.36",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "GB",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "4d30e2d79c50a73e",
+    "value": "103.118.28.15",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "VN",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "38dfeecd1d93214f",
+    "value": "5.226.140.110",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "GB",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "bbd903a4ad379a12",
+    "value": "45.148.10.152",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "NL",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "0fe2bc69d295faca",
+    "value": "79.124.60.146",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "BG",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "9839f4678270a9d0",
+    "value": "213.209.159.159",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "DE",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "f8af7379fbaefde7",
+    "value": "36.103.243.179",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "CN",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "5474cd199be17e56",
+    "value": "45.148.10.246",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "NL",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "1497c38d0b96d392",
+    "value": "146.70.194.228",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "FR",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "6afcabed83c7036e",
+    "value": "103.253.27.210",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "SG",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "e9d7e44b0c2b26f3",
+    "value": "2.57.122.195",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "RO",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "bd5a1ec0d3ab1723",
+    "value": "199.203.54.15",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "IL",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "8f7ed9e04c62c5da",
+    "value": "77.83.39.117",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "NL",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "675875807877530d",
+    "value": "183.171.4.138",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "MY",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "24475d93e85f485c",
+    "value": "121.164.135.251",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "KR",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "1d25dcd90ad32ffc",
+    "value": "45.43.58.106",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "5b0422aa10f4d2e5",
+    "value": "77.53.236.189",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "SE",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "1990208c52858b1e",
+    "value": "107.167.34.125",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "90880e418ee5ec2a",
+    "value": "79.124.59.78",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "BG",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "653bfda7c14c3469",
+    "value": "45.148.10.121",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "NL",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "93667bb8e200bde2",
+    "value": "199.45.155.74",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "HK",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "2f0d1228c2e82d8e",
+    "value": "211.228.218.47",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "KR",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "85d2fc9b8473a6cb",
+    "value": "64.227.99.233",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "c84dc9962305e783",
+    "value": "2.57.122.238",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "RO",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "bb33f83c175c6d62",
+    "value": "51.159.149.103",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "FR",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "4e3c68f9c7d610dd",
+    "value": "196.188.168.148",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "ET",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "5ec13449375f9b4e",
+    "value": "66.132.172.110",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "aeb206101bcd2db3",
+    "value": "196.188.187.85",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "ET",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "e51ff6a9c33310f8",
+    "value": "106.12.61.168",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "CN",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "55c789465a97949a",
+    "value": "2.57.121.112",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "RO",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "61229d035a21497d",
+    "value": "79.124.58.142",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "BG",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "b366f919c9d76e44",
+    "value": "102.219.126.124",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "AO",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "e595c4755e8b7bfa",
+    "value": "2.57.122.190",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "RO",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "df5e33c7483a6ae2",
+    "value": "196.188.187.21",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "ET",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "157faccef228caa0",
+    "value": "196.41.207.112",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "ZA",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "6bfbf15d5a08bb87",
+    "value": "120.36.82.210",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "CN",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "a9acb9e93c222404",
+    "value": "143.110.142.50",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "bee52ced001926a2",
+    "value": "151.243.11.37",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "DE",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "a9929d664a8cac12",
+    "value": "196.188.93.169",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "ET",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "ddd128de7eddf093",
+    "value": "112.26.74.90",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "CN",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "567d836fd9d104fe",
+    "value": "45.227.254.170",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "LT",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "4cc03dff2e473004",
+    "value": "111.26.95.120",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "CN",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "c91483eb3b6800f9",
+    "value": "112.5.76.239",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "CN",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "af3dc4f919154128",
+    "value": "92.118.39.197",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "RO",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "71373d6d0653cf9e",
+    "value": "162.240.167.229",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "13d3a06faa97cc8e",
+    "value": "78.128.114.102",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "BG",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "c4052a12d228700d",
+    "value": "135.237.126.84",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "4733361b1b1a4868",
+    "value": "14.29.214.161",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "CN",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "856747b36ef36a1f",
+    "value": "68.183.229.3",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "SG",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "84201c5b017c3579",
+    "value": "49.124.153.14",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "MY",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "10213313d5146e42",
+    "value": "81.30.98.49",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "IR",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "b578070b39afd0c9",
+    "value": "45.94.31.100",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "NL",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "635328bb92a8b91d",
+    "value": "117.184.105.34",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "CN",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "3597412c5f08e9ce",
+    "value": "193.24.211.95",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "BG",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "1ef7a1bc63b28782",
+    "value": "85.217.140.35",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "FR",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "62acc3773446a003",
+    "value": "104.243.35.94",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "730b4bab99451807",
+    "value": "183.111.166.18",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "KR",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "c9d2f62b9e9c7e93",
+    "value": "71.6.199.23",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "7235a45c080e8a89",
+    "value": "172.245.16.13",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "36e440952916eea7",
+    "value": "182.16.41.74",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "HK",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "7dc7dec36b5e4316",
+    "value": "172.185.24.228",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "0ca057d6514c708e",
+    "value": "178.128.199.27",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "DE",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "9a0c0d2f29f6f0c5",
+    "value": "184.70.159.86",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "CA",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "b00328b2f92f533e",
+    "value": "213.209.159.158",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "DE",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "5f22d8299223d760",
+    "value": "193.46.255.86",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "RO",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "266d2004d38ac9c8",
+    "value": "176.65.132.17",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "DE",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "6ade85f91f38044d",
+    "value": "45.142.193.12",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "NL",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "5dae31b49156f940",
+    "value": "40.77.167.131",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "02b8888272cc87d9",
+    "value": "85.217.140.42",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "FR",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "2f3e7c9b2e2989aa",
+    "value": "52.165.88.92",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "7c2e69dc5056cd81",
+    "value": "159.100.13.237",
+    "type": "ip",
+    "source": "AbuseIPDB",
+    "risk_score": 100,
+    "tags": [
+      "abuse",
+      "reported"
+    ],
+    "description": "Reported 0 times",
+    "country": "DE",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "72c4bd3573030911",
+    "value": "162.243.103.246",
+    "type": "ip",
+    "source": "Feodo_Blocklist",
+    "risk_score": 90,
+    "tags": [
+      "botnet",
+      "c2",
+      "free_feed"
+    ],
+    "description": "C2 botnet IP from Feodo Tracker",
+    "country": "",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "73646addd848be2f",
+    "value": "178.62.3.223",
+    "type": "ip",
+    "source": "Feodo_Blocklist",
+    "risk_score": 90,
+    "tags": [
+      "botnet",
+      "c2",
+      "free_feed"
+    ],
+    "description": "C2 botnet IP from Feodo Tracker",
+    "country": "",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "f8e0d0edb89dc297",
+    "value": "27.133.154.218",
+    "type": "ip",
+    "source": "Feodo_Blocklist",
+    "risk_score": 90,
+    "tags": [
+      "botnet",
+      "c2",
+      "free_feed"
+    ],
+    "description": "C2 botnet IP from Feodo Tracker",
+    "country": "",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "c7bab83bca40bbbe",
+    "value": "34.204.119.63",
+    "type": "ip",
+    "source": "Feodo_Blocklist",
+    "risk_score": 90,
+    "tags": [
+      "botnet",
+      "c2",
+      "free_feed"
+    ],
+    "description": "C2 botnet IP from Feodo Tracker",
+    "country": "",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "518209e4a9dc9030",
+    "value": "50.16.16.211",
+    "type": "ip",
+    "source": "Feodo_Blocklist",
+    "risk_score": 90,
+    "tags": [
+      "botnet",
+      "c2",
+      "free_feed"
+    ],
+    "description": "C2 botnet IP from Feodo Tracker",
+    "country": "",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "4844b81e6615db0f",
+    "value": "85.11.161.198",
+    "type": "ip",
+    "source": "OTX",
+    "risk_score": 75,
+    "tags": [
+      "phishing",
+      "lumma stealer",
+      "powershell",
+      "information stealer",
+      "credential theft",
+      "hijackloader",
+      "dll sideloading",
+      "lummastealer",
+      "clickfix"
+    ],
+    "description": "User interaction with a ClickFix-style phishing site resulted in execution of an obfuscated PowerShell command",
+    "country": "",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "301638743b3f2f41",
+    "value": "http://robinhuds.com:9658/",
+    "type": "url",
+    "source": "OTX",
+    "risk_score": 75,
+    "tags": [
+      "phishing",
+      "lumma stealer",
+      "powershell",
+      "information stealer",
+      "credential theft",
+      "hijackloader",
+      "dll sideloading",
+      "lummastealer",
+      "clickfix"
+    ],
+    "description": "User interaction with a ClickFix-style phishing site resulted in execution of an obfuscated PowerShell command",
+    "country": "",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "d7949d6556125820",
+    "value": "http://85.11.161.198:6600/qffww8ph/2DTYOKUEN.msi",
+    "type": "url",
+    "source": "OTX",
+    "risk_score": 75,
+    "tags": [
+      "phishing",
+      "lumma stealer",
+      "powershell",
+      "information stealer",
+      "credential theft",
+      "hijackloader",
+      "dll sideloading",
+      "lummastealer",
+      "clickfix"
+    ],
+    "description": "User interaction with a ClickFix-style phishing site resulted in execution of an obfuscated PowerShell command",
+    "country": "",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "e40dd377d1e523ef",
+    "value": "robinhuds.com",
+    "type": "domain",
+    "source": "OTX",
+    "risk_score": 75,
+    "tags": [
+      "phishing",
+      "lumma stealer",
+      "powershell",
+      "information stealer",
+      "credential theft",
+      "hijackloader",
+      "dll sideloading",
+      "lummastealer",
+      "clickfix"
+    ],
+    "description": "User interaction with a ClickFix-style phishing site resulted in execution of an obfuscated PowerShell command",
+    "country": "",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "8ef830c23253945e",
+    "value": "kyblogtz6k3jtxnjjvluee5ec4g3zcnvyvbgsnq5thumphmqidkt7xid.onion",
+    "type": "domain",
+    "source": "OTX",
+    "risk_score": 75,
+    "tags": [
+      "post-quantum cryptography",
+      "x25519",
+      "aes-ctr encryption",
+      "rust ransomware",
+      "hybrid encryption",
+      "file encryption",
+      "kyber",
+      "kyber1024"
+    ],
+    "description": "Kyber ransomware is not just post-quantum name-dropping",
+    "country": "",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "45d00e2894e47db1",
+    "value": "http://mlnmlnnrdhcaddwll4zqvfd2vyqsgtgj473gjoehwna2v4sizdukheyd.onion/chat/f9e1d038b1f5220e888b56e97881937f",
+    "type": "url",
+    "source": "OTX",
+    "risk_score": 75,
+    "tags": [
+      "post-quantum cryptography",
+      "x25519",
+      "aes-ctr encryption",
+      "rust ransomware",
+      "hybrid encryption",
+      "file encryption",
+      "kyber",
+      "kyber1024"
+    ],
+    "description": "Kyber ransomware is not just post-quantum name-dropping",
+    "country": "",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "2780bfd4166fad79",
+    "value": "mlnmlnnrdhcaddwll4zqvfd2vyqsgtgj473gjoehwna2v4sizdukheyd.onion",
+    "type": "domain",
+    "source": "OTX",
+    "risk_score": 75,
+    "tags": [
+      "post-quantum cryptography",
+      "x25519",
+      "aes-ctr encryption",
+      "rust ransomware",
+      "hybrid encryption",
+      "file encryption",
+      "kyber",
+      "kyber1024"
+    ],
+    "description": "Kyber ransomware is not just post-quantum name-dropping",
+    "country": "",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "b106ef0e7bf8ce90",
+    "value": "jsonserv.biz",
+    "type": "domain",
+    "source": "OTX",
+    "risk_score": 75,
+    "tags": [
+      "india targeting",
+      "android banking trojan",
+      "otp theft",
+      "vpn manipulation",
+      "kycshadow",
+      "whatsapp distribution",
+      "firebase c2",
+      "credential theft",
+      "sms interception"
+    ],
+    "description": "KYCShadow: An Android Banking Malware Exploiting Fake KYC Workflows for Credential and OTP Theft",
+    "country": "",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "686b01b33e5f7e02",
+    "value": "jsonserv.xyz",
+    "type": "domain",
+    "source": "OTX",
+    "risk_score": 75,
+    "tags": [
+      "india targeting",
+      "android banking trojan",
+      "otp theft",
+      "vpn manipulation",
+      "kycshadow",
+      "whatsapp distribution",
+      "firebase c2",
+      "credential theft",
+      "sms interception"
+    ],
+    "description": "KYCShadow: An Android Banking Malware Exploiting Fake KYC Workflows for Credential and OTP Theft",
+    "country": "",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "e82669f01ad6e8f4",
+    "value": "jsonapi.biz",
+    "type": "domain",
+    "source": "OTX",
+    "risk_score": 75,
+    "tags": [
+      "india targeting",
+      "android banking trojan",
+      "otp theft",
+      "vpn manipulation",
+      "kycshadow",
+      "whatsapp distribution",
+      "firebase c2",
+      "credential theft",
+      "sms interception"
+    ],
+    "description": "KYCShadow: An Android Banking Malware Exploiting Fake KYC Workflows for Credential and OTP Theft",
+    "country": "",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "b7420a13c06af3c9",
+    "value": "https://jsonapi.biz",
+    "type": "url",
+    "source": "OTX",
+    "risk_score": 75,
+    "tags": [
+      "india targeting",
+      "android banking trojan",
+      "otp theft",
+      "vpn manipulation",
+      "kycshadow",
+      "whatsapp distribution",
+      "firebase c2",
+      "credential theft",
+      "sms interception"
+    ],
+    "description": "KYCShadow: An Android Banking Malware Exploiting Fake KYC Workflows for Credential and OTP Theft",
+    "country": "",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  },
+  {
+    "id": "1897a9496c65827d",
+    "value": "45.33.32.156",
+    "type": "ip",
+    "source": "VirusTotal",
+    "risk_score": 4,
+    "tags": [
+      "virustotal"
+    ],
+    "description": "Detected by 4/91 VT engines",
+    "country": "US",
+    "first_seen": "2026-04-29T18:26:56Z",
+    "last_seen": "2026-04-29T18:26:56Z",
+    "blocked": false
+  }
+]

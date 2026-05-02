@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.log
+.env
+
+week1/data/
+week2/data/
+week3/data/
+week4/data/
+
+.DS_Store
+Thumbs.db
