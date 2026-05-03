@@ -449,6 +449,109 @@ http://localhost:5601
 | Kibana shows nothing | Wait 60 seconds after starting Docker, then run elk_pusher.py again |
 
 
+# Week 3 — Dynamic Security Policy Enforcer
+
+## Files
+
+```
+week3/
+├── policy_enforcer.py    ← MAIN script — blocks high-risk IPs
+├── rollback.py           ← SOC analyst tool — undo blocks
+├── requirements.txt
+└── data/
+    ├── normalized_indicators.json  ← copy from week2/data/
+    ├── blocked_ips.json            ← auto-created
+    └── enforcement_log.json        ← auto-created
+```
+
+---
+
+## Step-by-step commands
+
+### Step 1 — Copy Week 2 data
+```bash
+mkdir -p ~/Downloads/week3/data
+cp ~/Downloads/week2/data/normalized_indicators.json ~/Downloads/week3/data/
+cd ~/Downloads/week3
+```
+
+### Step 2 — Run in DRY RUN mode (safe, no real blocking)
+```bash
+python3 policy_enforcer.py
+```
+
+### Step 3 — View what got blocked
+```bash
+python3 rollback.py list
+```
+
+### Step 4 — View audit log
+```bash
+python3 rollback.py log
+```
+
+### Step 5 — Rollback a false positive
+```bash
+python3 rollback.py unblock 1.2.3.4
+```
+
+---
+
+## Sample output
+
+```
+=======================================================
+  WEEK 3 — Dynamic Security Policy Enforcer
+=======================================================
+  Found 105 high-risk IPs (score >= 80)
+  Already blocked: 0
+  Mode: DRY RUN (simulation)
+
+  [DRY-RUN] BLOCKED  45.141.84.83        risk=90  source=Feodo_Tracker
+  [DRY-RUN] BLOCKED  179.43.175.6        risk=85  source=AbuseIPDB
+  [DRY-RUN] BLOCKED  185.220.101.1       risk=80  source=VirusTotal
+  ... and 102 more
+
+=======================================================
+  New IPs blocked:   105
+  Total blocked:     105
+  Log saved to:      data/enforcement_log.json
+=======================================================
+```
+
+---
+
+## Enable live blocking (Week 3 advanced)
+
+Open `policy_enforcer.py` and change:
+```python
+DRY_RUN = False   # line 30
+```
+
+Then run again — real iptables rules will be applied.
+
+> ⚠ Only do this on your security VM, not on a production system!
+
+---
+
+## How it works
+
+```
+normalized_indicators.json
+          ↓
+  policy_enforcer.py
+  (reads high-risk IPs)
+          ↓
+  iptables -A INPUT -s <IP> -j DROP
+          ↓
+  enforcement_log.json  ←  full audit trail
+  blocked_ips.json      ←  current block list
+          ↓
+  rollback.py           ←  SOC analyst can undo any block
+```
+
+
+
 ## 🚀 Future Improvements
 
 - MongoDB integration for persistent long-term storage
