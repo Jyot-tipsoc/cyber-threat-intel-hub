@@ -1,0 +1,118 @@
+# ================================================================
+#  Cyber Threat Intelligence Hub — Central Configuration
+#  Threat Intelligence Platform (TIP)
+# ================================================================
+
+# ── Project Info ────────────────────────────────────────────────
+project:
+  name: "Cyber Threat Intelligence Hub"
+  version: "1.0.0"
+  author: "TIP Internship Project"
+  environment: "development"   # development | production
+
+# ── File Paths ──────────────────────────────────────────────────
+paths:
+  week1_output:       "week1/output/raw_indicators.json"
+  week2_input:        "week2/data/raw_indicators.json"
+  week2_normalized:   "week2/data/normalized_indicators.json"
+  week3_blocked:      "week3/data/blocked_ips.json"
+  week3_log:          "week3/data/enforcement_log.json"
+  week4_report:       "week4/data/alert_report.json"
+  week4_test_results: "week4/data/test_results.json"
+
+# ── OSINT Feed Settings ─────────────────────────────────────────
+feeds:
+  otx:
+    enabled: true
+    base_url: "https://otx.alienvault.com/api/v1"
+    pulse_limit: 10
+    timeout_seconds: 15
+
+  virustotal:
+    enabled: true
+    base_url: "https://www.virustotal.com/api/v3"
+    timeout_seconds: 15
+    rate_limit_sleep: 15    # seconds between requests (free tier)
+
+  abuseipdb:
+    enabled: true
+    base_url: "https://api.abuseipdb.com/api/v2"
+    confidence_minimum: 90
+    limit: 100
+    timeout_seconds: 30
+
+  feodo_tracker:
+    enabled: true
+    url: "https://feodotracker.abuse.ch/downloads/ipblocklist.txt"
+    timeout_seconds: 20
+
+  urlhaus:
+    enabled: true
+    url: "https://urlhaus.abuse.ch/downloads/text_online/"
+    timeout_seconds: 20
+
+# ── Normalization Settings ──────────────────────────────────────
+normalization:
+  default_risk_scores:
+    AlienVault_OTX:  75
+    VirusTotal:      80
+    AbuseIPDB:       85
+    Feodo_Tracker:   90
+    URLhaus:         85
+    default:         50
+
+  severity_thresholds:
+    high:   80    # risk_score >= 80 → HIGH
+    medium: 50    # risk_score >= 50 → MEDIUM
+    low:    0     # risk_score <  50 → LOW
+
+# ── Policy Enforcement Settings ─────────────────────────────────
+enforcement:
+  risk_threshold:    80       # minimum score to trigger block
+  dry_run:           true     # true = simulate only, false = live iptables
+  chain_name:        "TIP_BLOCK"
+  ipset_name:        "tip_blocklist"
+  poll_interval:     60       # seconds between enforcement cycles
+
+# ── Elasticsearch / Kibana ──────────────────────────────────────
+elasticsearch:
+  host: "http://localhost:9200"
+  index: "threat-indicators"
+  timeout: 30
+
+kibana:
+  host: "http://localhost:5601"
+
+# ── MongoDB ─────────────────────────────────────────────────────
+mongodb:
+  host: "localhost"
+  port: 27017
+  database: "threatdb"
+  collections:
+    indicators:    "indicators"
+    blocked:       "blocked_ips"
+    audit_log:     "enforcement_audit"
+
+# ── Alerting ────────────────────────────────────────────────────
+alerting:
+  webhook_url: ""    # paste Slack/Teams webhook URL here
+  enabled:     false
+
+  # Console alert thresholds
+  alert_on_high_risk:   true
+  alert_on_new_block:   true
+  alert_on_rollback:    true
+
+# ── Logging ─────────────────────────────────────────────────────
+logging:
+  level: "INFO"          # DEBUG | INFO | WARNING | ERROR
+  log_to_file: true
+  log_file: "logs/tip.log"
+  max_size_mb: 10
+  backup_count: 3
+
+# ── Report Settings ─────────────────────────────────────────────
+reporting:
+  top_ips_count:     10
+  recent_log_count:  20
+  report_format:     "json"
