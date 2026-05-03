@@ -551,6 +551,121 @@ normalized_indicators.json
 ```
 
 
+# Week 4 — Alerting, Testing & Final Report
+
+## Files
+
+```
+week4/
+├── alert_system.py     ← generates alerts + threat report
+├── test_suite.py       ← tests all 4 weeks of the project
+├── requirements.txt
+└── data/
+    ├── alert_report.json     ← auto-created
+    └── test_results.json     ← auto-created
+```
+
+---
+
+## Step-by-step commands
+
+### Step 1 — Setup data folder
+```bash
+mkdir -p ~/Downloads/week4/data
+cd ~/Downloads/week4
+```
+
+### Step 2 — Run alert system
+```bash
+python3 alert_system.py
+```
+
+### Step 3 — Run full test suite
+```bash
+python3 test_suite.py
+```
+
+### Step 4 — Push to GitHub
+```bash
+git add .
+git commit -m "Week 4: Alerting and testing complete"
+git push origin main
+```
+
+---
+
+## Sample output — alert_system.py
+
+```
+=======================================================
+  THREAT INTELLIGENCE PLATFORM — ALERT REPORT
+  Generated: 2026-04-30T10:00:00Z
+=======================================================
+
+  SUMMARY
+  Total IPs Blocked:           105
+  Total Rollbacks:               2
+  Currently Blocked:           103
+  Average Risk Score:           87.3
+
+  BLOCKS BY SOURCE
+  Feodo_Tracker              94   ██████████████████████████████
+  AbuseIPDB                   8   ████████
+  VirusTotal                  3   ███
+
+  TOP 10 BLOCKED IPs
+  IP                   Risk  Source
+  45.141.84.83           90  Feodo_Tracker
+  179.43.175.6           85  AbuseIPDB
+  ...
+```
+
+---
+
+## Sample output — test_suite.py
+
+```
+  WEEK 1 — OSINT Feed Collector
+  ✅ PASS  raw_indicators.json exists
+  ✅ PASS  raw_indicators.json not empty
+  ✅ PASS  Has 10+ indicators
+  ✅ PASS  Has 3+ OSINT sources
+
+  WEEK 2 — Normalizer
+  ✅ PASS  normalized_indicators.json exists
+  ✅ PASS  Risk scores are 0-100
+  ✅ PASS  No duplicate IDs
+
+  WEEK 3 — Policy Enforcer
+  ✅ PASS  blocked_ips.json exists
+  ✅ PASS  Has 10+ blocked IPs
+
+  WEEK 4 — Alert System
+  ✅ PASS  alert_report.json exists
+
+  TEST SUMMARY
+  Total:  15
+  Passed: 15  ✅
+  Score:  100%
+```
+
+---
+
+## Complete project flow
+
+```
+Week 1: feed_collector.py     → raw_indicators.json
+           ↓
+Week 2: normalizer.py         → normalized_indicators.json
+        elk_pusher.py         → Elasticsearch + Kibana
+           ↓
+Week 3: policy_enforcer.py    → blocked_ips.json + enforcement_log.json
+        rollback.py           → SOC analyst rollback tool
+           ↓
+Week 4: alert_system.py       → alert_report.json
+        test_suite.py         → test_results.json
+```
+
 
 ## 🚀 Future Improvements
 
