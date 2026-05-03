@@ -1,183 +1,217 @@
-# 🛡️ Threat Intelligence Platform (TIP)
+# 🛡️ Cyber Threat Intelligence Hub
 
-A production-grade Threat Intelligence Platform with automated firewall enforcement, SIEM integration, and SOC dashboard — built for financial institutions.
+**Advanced Threat Intelligence Platform (TIP) for Financial Institutions**
 
+[![Python](https://img.shields.io/badge/Python-3.11-blue)](https://python.org)
+[![Elasticsearch](https://img.shields.io/badge/Elasticsearch-8.13-green)](https://elastic.co)
+[![Docker](https://img.shields.io/badge/Docker-Compose-blue)](https://docker.com)
+[![License](https://img.shields.io/badge/License-Apache%202.0-orange)](LICENSE)
 
-📌 Project Overview
-The Cyber Threat Intelligence Hub is a fully automated Threat Intelligence
-Platform (TIP) designed for financial institutions to proactively defend against
-cyber threats such as botnets, malware distribution networks, and abusive IPs.
-The platform collects malicious indicators (IPs, domains, URLs) from multiple
-OSINT sources, normalizes and risk-scores them, enforces firewall rules via
-iptables, and provides a Kibana SIEM dashboard for real-time visualization.
+---
 
-🏗️ Architecture
-┌──────────────────────────────────────────────────────────────┐
-│                   TIP — System Architecture                  │
-│                                                              │
-│  OSINT Sources         Week 1            Output              │
-│  ┌───────────┐      ┌──────────┐      ┌──────────┐          │
-│  │ OTX       │─────▶│  Feed    │─────▶│  raw_    │          │
-│  │VirusTotal │─────▶│Collector │      │indicators│          │
-│  │ AbuseIPDB │─────▶│          │      │  .json   │          │
-│  │ Feodo     │─────▶│          │      └──────────┘          │
-│  │ URLhaus   │─────▶│          │            │                │
-│  └───────────┘      └──────────┘            │                │
-│                                             ▼                │
-│                          Week 2      ┌──────────┐            │
-│                       ┌──────────┐   │Normalized│            │
-│                       │Normalizer│──▶│indicators│            │
-│                       │+ Scoring │   │  .json   │            │
-│                       └──────────┘   └──────────┘            │
-│                            │               │                  │
-│                            ▼               ▼                  │
-│                       ┌──────────┐   ┌──────────┐            │
-│                       │   ELK    │   │  Week 3  │            │
-│                       │  Stack   │   │  Policy  │            │
-│                       │ Kibana   │   │ Enforcer │            │
-│                       └──────────┘   └──────────┘            │
-│                                            │                  │
-│                          Week 4            ▼                  │
-│                       ┌──────────────────────┐               │
-│                       │  Alert System +      │               │
-│                       │  Test Suite +        │               │
-│                       │  Final Report        │               │
-│                       └──────────────────────┘               │
-└──────────────────────────────────────────────────────────────┘
+## 📌 Project Overview
 
-📁 Project Structure
+The **Cyber Threat Intelligence Hub** is a fully automated Threat Intelligence Platform (TIP) designed for financial institutions to proactively defend against cyber threats.
+
+The platform:
+- Collects malicious IPs, domains, and URLs from 5 OSINT sources
+- Normalizes and risk-scores every indicator (HIGH / MEDIUM / LOW)
+- Pushes data into Elasticsearch and visualizes it in Kibana
+- Automatically blocks high-risk IPs using Linux iptables
+- Generates threat reports and runs a full automated test suite
+
+---
+
+## 📁 Project Structure
+
+```
 cyber-threat-intel-hub/
 │
-├── Week1/                              # OSINT Data Collection
-│   ├── feed_collector.py               # Pulls data from 5 OSINT sources
+├── Week1/                          # OSINT Data Collection
+│   ├── feed_collector.py
 │   ├── requirements.txt
-│   ├── .env                            # API keys (never commit this)
+│   ├── .env                        # API keys (never commit)
 │   └── data/
 │       └── raw_indicators.json
 │
-├── Week2/                              # Normalization + SIEM
-│   ├── normalizer.py                   # Cleans + risk-scores data
-│   ├── elk_pusher.py                   # Pushes to Elasticsearch
+├── Week2/                          # Normalization + ELK SIEM
+│   ├── normalizer.py
+│   ├── elk_pusher.py
 │   ├── docker-compose.yml
 │   ├── requirements.txt
 │   └── data/
 │       ├── raw_indicators.json
 │       └── normalized_indicators.json
 │
-├── Week3/                              # Dynamic Policy Enforcement
-│   ├── policy_enforcer.py              # Blocks IPs via iptables
-│   ├── rollback.py                     # SOC analyst rollback tool
+├── Week3/                          # Dynamic Policy Enforcement
+│   ├── policy_enforcer.py
+│   ├── rollback.py
 │   ├── requirements.txt
 │   └── data/
 │       ├── blocked_ips.json
 │       └── enforcement_log.json
 │
-├── Week4/                              # Alerting + Testing
-│   ├── alert_system.py                 # Generates threat reports
-│   ├── test_suite.py                   # Tests all 4 weeks
+├── Week4/                          # Alerting + Testing
+│   ├── alert_system.py
+│   ├── test_suite.py
 │   ├── requirements.txt
 │   └── data/
 │       ├── alert_report.json
 │       └── test_results.json
 │
-├── Config/                             # Central Configuration
-│   ├── config.yml                      # All settings
-│   ├── mongo_init.js                   # MongoDB initialization
-│   └── blocklist.py                    # Blocklist management
+├── Config/                         # Central Configuration
+│   ├── config.yml
+│   ├── mongo_init.js
+│   └── blocklist.py
 │
-├── docker-compose.yml                  # Full ELK + MongoDB stack
-├── requirements.txt                    # All Python dependencies
+├── docker-compose.yml              # Full ELK + MongoDB stack
+├── requirements.txt
 ├── .gitignore
-├── LICENSE                             # Apache 2.0
+├── LICENSE                         # Apache 2.0
 └── README.md
+```
 
-⚡ Quick Start
-bash# Install packages
+---
+
+## 🔄 How It Works
+
+**Week 1** → Feed Collector pulls threat data from 5 OSINT sources and saves to `raw_indicators.json`
+
+**Week 2** → Normalizer cleans and scores the data, then ELK Pusher sends it to Elasticsearch for Kibana visualization
+
+**Week 3** → Policy Enforcer reads high-risk IPs and blocks them using Linux iptables. Rollback tool lets SOC analysts undo any block
+
+**Week 4** → Alert System generates a threat summary report. Test Suite automatically validates all 4 weeks
+
+---
+
+## ⚡ Quick Start
+
+### Install requirements
+```bash
 pip3 install -r requirements.txt --break-system-packages
+```
 
-# Week 1 - Collect data
-cd Week1 && python3 feed_collector.py
+### Week 1 — Collect threat data
+```bash
+cd Week1
+nano .env          # add your API keys
+python3 feed_collector.py
+```
 
-# Week 2 - Normalize + push to ELK
-cd ../Week2
+### Week 2 — Normalize + push to Kibana
+```bash
+cd Week2
 cp ../Week1/data/raw_indicators.json data/
 python3 normalizer.py
 sudo docker compose up -d
 python3 elk_pusher.py
-# Open: http://localhost:5601
+# Open Kibana: http://localhost:5601
+```
 
-# Week 3 - Enforce firewall rules
-cd ../Week3
+### Week 3 — Block malicious IPs
+```bash
+cd Week3
 cp ../Week2/data/normalized_indicators.json data/
 python3 policy_enforcer.py
 python3 rollback.py list
+```
 
-# Week 4 - Alerts + Testing
-cd ../Week4
+### Week 4 — Alerts and testing
+```bash
+cd Week4
 python3 alert_system.py
 python3 test_suite.py
+```
 
-📅 Week-by-Week Guide
-✅ Week 1 — OSINT Data Collection
-SourceData TypeAPI KeyAlienVault OTXIPs, Domains, URLsFreeVirusTotalMalicious IPsFreeAbuseIPDBReported IPsFreeFeodo TrackerBotnet C2 IPsNot neededURLhausMalware URLsNot needed
-✅ Week 2 — Normalization + ELK SIEM
-Risk Scoring:
-ScoreSeverity80-100🔴 HIGH50-79🟡 MEDIUM0-49🟢 LOW
-✅ Week 3 — Dynamic Policy Enforcement
-bashpython3 rollback.py list              # show blocked IPs
-python3 rollback.py unblock 1.2.3.4  # rollback false positive
-python3 rollback.py log              # view audit log
-✅ Week 4 — Alerting + Testing
-Automated test suite checks all 4 weeks and generates a pass/fail report.
+---
 
-🛠️ Technology Stack
-ComponentTechnologyVersionLanguagePython3.11OSINTOTX, VirusTotal, AbuseIPDB, Feodo, URLhaus-SIEMElasticsearch + Kibana8.13DatabaseMongoDB7.0FirewallLinux iptables-InfrastructureDocker + Compose-
+## 📊 OSINT Sources
 
-🔑 Environment Variables
-Create Week1/.env:
+| Source | Data Type | API Key |
+|--------|-----------|---------|
+| AlienVault OTX | IPs, Domains, URLs | Free |
+| VirusTotal | Malicious IPs | Free |
+| AbuseIPDB | Reported IPs | Free |
+| Feodo Tracker | Botnet C2 IPs | Not needed |
+| URLhaus | Malware URLs | Not needed |
+
+---
+
+## 🎯 Risk Scoring
+
+| Score | Severity | Action |
+|-------|----------|--------|
+| 80 – 100 | 🔴 HIGH | Auto-blocked by enforcer |
+| 50 – 79 | 🟡 MEDIUM | Logged and monitored |
+| 0 – 49 | 🟢 LOW | Logged only |
+
+---
+
+## 🛠️ Technology Stack
+
+| Component | Technology | Version |
+|-----------|------------|---------|
+| Language | Python | 3.11 |
+| SIEM | Elasticsearch + Kibana | 8.13 |
+| Database | MongoDB | 7.0 |
+| Firewall | Linux iptables | - |
+| Infrastructure | Docker + Compose | - |
+| Version Control | Git + GitHub | - |
+
+---
+
+## 🔑 API Keys Setup
+
+Create `Week1/.env` file:
+```
 OTX_API_KEY=your_key_here
 VIRUSTOTAL_API_KEY=your_key_here
 ABUSEIPDB_API_KEY=your_key_here
+```
 
-⚠️ Never commit your .env file!
+Get free keys from:
+- OTX → https://otx.alienvault.com
+- VirusTotal → https://www.virustotal.com
+- AbuseIPDB → https://www.abuseipdb.com
 
+> ⚠️ Never commit your `.env` file to GitHub!
 
-🗺️ Project Roadmap
-WeekTaskStatusWeek 1OSINT Data Collection✅ CompleteWeek 2Normalization + ELK SIEM✅ CompleteWeek 3Dynamic Policy Enforcer✅ CompleteWeek 4Alert System + Test Suite✅ Complete
+---
 
-🚀 Future Improvements
+## 🗺️ Project Roadmap
 
-MongoDB integration for persistent storage
-Scheduled collection via cron (every 6 hours)
-REST API for SOC dashboard
-Email + Slack alerts for HIGH risk blocks
-GeoIP mapping on Kibana world map
-Machine learning anomaly detection
+| Week | Task | Status |
+|------|------|--------|
+| Week 1 | OSINT Data Collection | ✅ Complete |
+| Week 2 | Normalization + ELK SIEM | ✅ Complete |
+| Week 3 | Dynamic Policy Enforcer | ✅ Complete |
+| Week 4 | Alert System + Test Suite | ✅ Complete |
 
+---
 
-📄 License
-Licensed under the Apache License 2.0 — see LICENSE.
-Apache 2.0 provides patent protection, commercial use freedom,
-and required attribution when code is reused.
+## 🚀 Future Improvements
 
-👤 Author
-Internship Project — Finance & Banking Cybersecurity
+- MongoDB integration for persistent long-term storage
+- Scheduled feed collection every 6 hours via cron
+- REST API for SOC dashboard integration
+- Email and Slack alerts for HIGH risk blocks
+- GeoIP world map visualization in Kibana
+- Machine learning anomaly detection on threat patterns
+
+---
+
+## 📄 License
+
+Licensed under the **Apache License 2.0** — see [LICENSE](LICENSE) for details.
+
+---
+
+## 👤 Author
+
+**Internship Project — Finance & Banking Cybersecurity**
 Threat Intelligence Platform (TIP) | Advanced Security Engineering
-GitHub: @Jyot-tipsoc
+GitHub: [@Jyot-tipsoc](https://github.com/Jyot-tipsoc)
 
-⚠️ DRY_RUN = True by default in policy_enforcer.py.
-Only disable on a dedicated security VM.
-ShareContentProject 1: Finance & Banking - Advanced Threat
-Intelligence Platform (TIP) & Dynamic Policy Enforcer
-Executive Problem Statement
-Financial institutions face a relentless barrage of sophisticated cyber attacks. Traditional static
-firewall rules and isolated security perimeters are insufficient agpasted
-                                 Apache License
-                           Version 2.0, January 2004
-                        http://www.apache.org/licenses/
-
-                           Copyright 2026 Jyot-tipsoc
-
-   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
-
-   1. Definipasted(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.nonce='8BU8OeXC5ZTIrEGC+v5zhw==';d.innerHTML="window.__CF$cv$params={r:'9f60a40fd856bff9',t:'MTc3NzgyNTcyNw=='};var a=document.createElement('script');a.nonce='8BU8OeXC5ZTIrEGC+v5zhw==';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();host.** Set `ENFORCER_DRY_RUN=true` during development to simulate without affecting real firewall rules.
+> ⚠️ `DRY_RUN = True` is set by default in `policy_enforcer.py` for safety.
+> Only disable on a dedicated security VM.
