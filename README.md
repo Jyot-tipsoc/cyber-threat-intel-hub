@@ -330,6 +330,125 @@ cat output/raw_indicators.json | python3 -m json.tool | head -40
 | Output file is empty | Check internet connection, at least Feodo+URLhaus should always work |
 
 
+
+# Week 2 — Normalization + SIEM (Elasticsearch + Kibana)
+
+## What's new in Week 2
+
+```
+week2/
+├── normalizer.py        ← Step 1: Clean and score the data
+├── elk_pusher.py        ← Step 2: Send to Elasticsearch
+├── docker-compose.yml   ← Starts Elasticsearch + Kibana
+├── requirements.txt     ← Updated with elasticsearch package
+└── output/
+    ├── raw_indicators.json         ← from Week 1 (copy this here)
+    └── normalized_indicators.json  ← created by normalizer.py
+```
+
+---
+
+## Before you start — copy Week 1 output
+
+```bash
+mkdir -p ~/Downloads/week2/output
+cp ~/Downloads/week1/output/raw_indicators.json ~/Downloads/week2/output/
+```
+
+---
+
+## Step-by-step commands
+
+### Step 1 — Go to week2 folder
+```bash
+cd ~/Downloads/week2
+```
+
+### Step 2 — Install new package
+```bash
+pip3 install elasticsearch==8.13.0 --break-system-packages
+```
+
+### Step 3 — Start Elasticsearch and Kibana
+```bash
+sudo docker compose up -d
+```
+Wait 30–40 seconds for them to fully start.
+
+Check they are running:
+```bash
+sudo docker ps
+```
+You should see both `elasticsearch` and `kibana` containers running.
+
+### Step 4 — Run the normalizer
+```bash
+python3 normalizer.py
+```
+
+### Step 5 — Push to Elasticsearch
+```bash
+python3 elk_pusher.py
+```
+
+### Step 6 — Open Kibana in browser
+```
+http://localhost:5601
+```
+
+---
+
+## Kibana setup (one time only)
+
+1. Click **"Explore on my own"**
+2. Go to **☰ Menu → Management → Stack Management**
+3. Click **Kibana → Data Views**
+4. Click **"Create data view"**
+5. Name: `threat-indicators*`
+6. Timestamp: `last_seen`
+7. Click **"Save data view to Kibana"**
+8. Go to **☰ Menu → Analytics → Discover**
+9. You will see all your threat indicators! ✅
+
+---
+
+## Sample output from normalizer.py
+
+```
+══════════════════════════════════════════════════
+   WEEK 2 — Step 1: Normalizer
+══════════════════════════════════════════════════
+
+  Total raw input:       2131
+  Skipped (invalid):     12
+  Duplicates removed:    45
+  ─────────────────────
+  Final unique count:    2074
+
+  🔴 High risk  (80-100): 1823
+  🟡 Medium risk (50-79):  201
+  🟢 Low risk    (0-49):    50
+
+  ip          1650 indicators
+  url          380 indicators
+  domain        44 indicators
+
+  📁 Saved to: output/normalized_indicators.json
+  ✅ Step 1 complete!
+```
+
+---
+
+## Troubleshooting
+
+| Problem | Fix |
+|---|---|
+| `raw_indicators.json not found` | Copy it from week1: `cp ~/Downloads/week1/output/raw_indicators.json output/` |
+| Elasticsearch won't start | Your VM needs at least 4GB RAM. Check: `free -h` |
+| `docker: command not found` | Use `sudo docker compose up -d` |
+| Kibana shows nothing | Wait 60 seconds after starting Docker, then run elk_pusher.py again |
+
+
 ## 🚀 Future Improvements
 
 - MongoDB integration for persistent long-term storage
