@@ -2,7 +2,6 @@
 
 A production-grade Threat Intelligence Platform with automated firewall enforcement, SIEM integration, and SOC dashboard — built for financial institutions.
 
----
 
 📌 Project Overview
 The Cyber Threat Intelligence Hub is a fully automated Threat Intelligence
