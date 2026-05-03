@@ -190,6 +190,146 @@ Get free keys from:
 
 ---
 
+
+# Week 1 — OSINT Feed Collector
+
+## Files in this folder
+
+```
+week1/
+├── feed_collector.py   ← main script (only file you need to run)
+├── requirements.txt    ← 2 Python packages
+├── .env                ← your API keys go here
+└── output/             ← auto-created when you run the script
+    └── raw_indicators.json
+```
+
+---
+
+## Step-by-step commands
+
+### Step 1 — Go to your project folder
+```bash
+cd ~/Downloads/week1
+```
+
+### Step 2 — Install the required packages
+```bash
+pip install -r requirements.txt
+```
+
+### Step 3 — Add your API keys
+```bash
+nano .env
+```
+Paste your keys like this (no quotes):
+```
+OTX_API_KEY=abc123yourkeyhere
+VIRUSTOTAL_API_KEY=xyz789yourkeyhere
+ABUSEIPDB_API_KEY=def456yourkeyhere
+```
+Save with **Ctrl+O**, exit with **Ctrl+X**
+
+> No keys yet? That's OK — Sources 4 and 5 are completely free and work without any keys.
+
+### Step 4 — Run the collector
+```bash
+python3 feed_collector.py
+```
+
+---
+
+## Sample output (what you should see)
+
+```
+══════════════════════════════════════════════════
+   WEEK 1 — OSINT Feed Collector
+   Threat Intelligence Platform (TIP)
+══════════════════════════════════════════════════
+   Started: 2026-04-22 10:30:00 UTC
+
+──────────────────────────────────────────────────
+  SOURCE 1 — AlienVault OTX
+──────────────────────────────────────────────────
+  → Connecting to OTX API...
+  → Fetched 5 threat pulses
+  [+] IPv4       185.220.101.45
+  [+] domain     malicious-site.ru
+  ✅ OTX total: 12 indicators
+
+──────────────────────────────────────────────────
+  SOURCE 2 — VirusTotal
+──────────────────────────────────────────────────
+  → Looking up 3 IPs on VirusTotal...
+  🔴 185.220.101.1        8/90 detections  [DE]
+  🟢 198.51.100.23        0/90 detections  [US]
+  ✅ VirusTotal total: 1 indicators
+
+──────────────────────────────────────────────────
+  SOURCE 3 — AbuseIPDB
+──────────────────────────────────────────────────
+  → Fetching top reported IPs (confidence ≥ 90%)...
+  🔴 45.141.84.83         confidence: 100%   reports: 5823   [DE]
+  🔴 179.43.175.6         confidence: 100%   reports: 3210   [BR]
+  ✅ AbuseIPDB total: 20 indicators
+
+──────────────────────────────────────────────────
+  SOURCE 4 — Feodo Tracker  (FREE — no key needed)
+──────────────────────────────────────────────────
+  → Downloading botnet C2 IP blocklist...
+  🔴 103.75.190.3
+  🔴 45.95.168.157
+  ... and 245 more
+  ✅ Feodo Tracker total: 250 indicators
+
+──────────────────────────────────────────────────
+  SOURCE 5 — URLhaus  (FREE — no key needed)
+──────────────────────────────────────────────────
+  → Downloading active malware URLs...
+  🔴 http://malware-host.xyz/payload.exe
+  🔴 http://badsite.top/drop/file.bin
+  ... and 1843 more
+  ✅ URLhaus total: 1848 indicators
+
+══════════════════════════════════════════════════
+   COLLECTION COMPLETE — SUMMARY
+══════════════════════════════════════════════════
+   AlienVault_OTX              12 indicators
+   VirusTotal                   1 indicators
+   AbuseIPDB                   20 indicators
+   Feodo_Tracker              250 indicators
+   URLhaus                   1848 indicators
+──────────────────────────────────────────────────
+   TOTAL                     2131 indicators
+──────────────────────────────────────────────────
+
+   📁 Saved to: output/raw_indicators.json
+
+   ✅ Week 1 complete!
+   → Ready for Week 2: normalization + Elasticsearch
+══════════════════════════════════════════════════
+```
+
+---
+
+## Check the saved file
+```bash
+# See how many indicators were collected
+cat output/raw_indicators.json | python3 -m json.tool | head -40
+```
+
+---
+
+## Troubleshooting
+
+| Problem | Fix |
+|---|---|
+| `pip: command not found` | Use `pip3` instead of `pip` |
+| `ModuleNotFoundError` | Run `pip install -r requirements.txt` again |
+| OTX/VT/AbuseIPDB shows "skipping" | Check your key is pasted correctly in `.env` with no spaces |
+| Output file is empty | Check internet connection, at least Feodo+URLhaus should always work |
+
+
 ## 🚀 Future Improvements
 
 - MongoDB integration for persistent long-term storage
