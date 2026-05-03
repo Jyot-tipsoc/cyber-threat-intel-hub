@@ -1,312 +1,217 @@
-# 🛡️ Threat Intelligence Platform (TIP)
+# 🛡️ Cyber Threat Intelligence Hub
 
-A production-grade Threat Intelligence Platform with automated firewall enforcement, SIEM integration, and SOC dashboard — built for financial institutions.
+**Advanced Threat Intelligence Platform (TIP) for Financial Institutions**
+
+[![Python](https://img.shields.io/badge/Python-3.11-blue)](https://python.org)
+[![Elasticsearch](https://img.shields.io/badge/Elasticsearch-8.13-green)](https://elastic.co)
+[![Docker](https://img.shields.io/badge/Docker-Compose-blue)](https://docker.com)
+[![License](https://img.shields.io/badge/License-Apache%202.0-orange)](LICENSE)
 
 ---
 
-## 📐 Architecture
+## 📌 Project Overview
 
-```
-┌──────────────────────────────────────────────────────────────────┐
-│                        TIP Architecture                          │
-│                                                                  │
-│  OSINT Feeds          Aggregator            Storage              │
-│  ┌─────────┐          ┌─────────┐           ┌──────────┐        │
-│  │OTX      │─────────▶│         │──────────▶│ MongoDB  │        │
-│  │VirusTotal│────────▶│ Python  │           └──────────┘        │
-│  │AbuseIPDB│─────────▶│ daemon  │           ┌──────────┐        │
-│  │Blocklists│────────▶│         │──────────▶│  Elastic │        │
-│  └─────────┘          └─────────┘           └────┬─────┘        │
-│                                                   │              │
-│  Enforcer             Policy Engine          ┌────▼─────┐       │
-│  ┌─────────┐          ┌─────────┐            │  Kibana  │       │
-│  │iptables │◀─────────│ Python  │            │Dashboard │       │
-│  │ ipset   │          │ daemon  │◀───────────└──────────┘       │
-│  └─────────┘          └─────────┘                               │
-│                                                                  │
-│  Dashboard            REST API + Nginx                           │
-│  ┌─────────┐          ┌─────────┐                               │
-│  │  Flask  │◀─────────│  Nginx  │                               │
-│  │  API    │          │  :80    │                               │
-│  └─────────┘          └─────────┘                               │
-└──────────────────────────────────────────────────────────────────┘
-```
+The **Cyber Threat Intelligence Hub** is a fully automated Threat Intelligence Platform (TIP) designed for financial institutions to proactively defend against cyber threats.
+
+The platform:
+- Collects malicious IPs, domains, and URLs from 5 OSINT sources
+- Normalizes and risk-scores every indicator (HIGH / MEDIUM / LOW)
+- Pushes data into Elasticsearch and visualizes it in Kibana
+- Automatically blocks high-risk IPs using Linux iptables
+- Generates threat reports and runs a full automated test suite
 
 ---
 
 ## 📁 Project Structure
 
 ```
-tip-platform/
-├── docker-compose.yml          # Orchestrates all services
-├── .env.example                # Environment variable template
+cyber-threat-intel-hub/
+│
+├── Week1/                          # OSINT Data Collection
+│   ├── feed_collector.py
+│   ├── requirements.txt
+│   ├── .env                        # API keys (never commit)
+│   └── data/
+│       └── raw_indicators.json
+│
+├── Week2/                          # Normalization + ELK SIEM
+│   ├── normalizer.py
+│   ├── elk_pusher.py
+│   ├── docker-compose.yml
+│   ├── requirements.txt
+│   └── data/
+│       ├── raw_indicators.json
+│       └── normalized_indicators.json
+│
+├── Week3/                          # Dynamic Policy Enforcement
+│   ├── policy_enforcer.py
+│   ├── rollback.py
+│   ├── requirements.txt
+│   └── data/
+│       ├── blocked_ips.json
+│       └── enforcement_log.json
+│
+├── Week4/                          # Alerting + Testing
+│   ├── alert_system.py
+│   ├── test_suite.py
+│   ├── requirements.txt
+│   └── data/
+│       ├── alert_report.json
+│       └── test_results.json
+│
+├── Config/                         # Central Configuration
+│   ├── config.yml
+│   ├── mongo_init.js
+│   └── blocklist.py
+│
+├── docker-compose.yml              # Full ELK + MongoDB stack
+├── requirements.txt
 ├── .gitignore
-├── pytest.ini
-│
-├── aggregator/                 # OSINT feed collection daemon
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   ├── main.py                 # Scheduler entry point
-│   ├── normalizer.py           # Schema normalization
-│   ├── feeds/
-│   │   ├── blocklists.py       # Free public blocklists (no key needed)
-│   │   ├── otx.py              # AlienVault OTX
-│   │   ├── virustotal.py       # VirusTotal
-│   │   └── abuseipdb.py        # AbuseIPDB
-│   └── storage/
-│       ├── mongo.py            # MongoDB layer
-│       └── elastic.py          # Elasticsearch layer
-│
-├── enforcer/                   # Dynamic Policy Enforcer daemon
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   ├── enforcer.py             # iptables/ipset enforcement daemon
-│   └── rollback.py             # SOC analyst rollback CLI tool
-│
-├── dashboard/                  # REST API for SOC dashboard
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   └── app.py                  # Flask API
-│
-├── nginx/
-│   └── nginx.conf              # Reverse proxy config
-│
-├── scripts/
-│   ├── mongo-init.js           # MongoDB initialization
-│   ├── kibana-objects.json     # Pre-built Kibana dashboard
-│   └── import-kibana.sh        # Kibana import helper
-│
-└── tests/
-    └── test_normalizer.py      # Unit tests
+├── LICENSE                         # Apache 2.0
+└── README.md
 ```
 
 ---
 
-## ⚡ Prerequisites
+## 🔄 How It Works
 
-- **Linux** (Ubuntu 20.04+ recommended — enforcer uses iptables)
-- **Docker** ≥ 24.0
-- **Docker Compose** ≥ 2.20
-- **Git**
+**Week 1** → Feed Collector pulls threat data from 5 OSINT sources and saves to `raw_indicators.json`
 
+**Week 2** → Normalizer cleans and scores the data, then ELK Pusher sends it to Elasticsearch for Kibana visualization
+
+**Week 3** → Policy Enforcer reads high-risk IPs and blocks them using Linux iptables. Rollback tool lets SOC analysts undo any block
+
+**Week 4** → Alert System generates a threat summary report. Test Suite automatically validates all 4 weeks
+
+---
+
+## ⚡ Quick Start
+
+### Install requirements
 ```bash
-# Install Docker (if not installed)
-curl -fsSL https://get.docker.com | bash
-sudo usermod -aG docker $USER
-newgrp docker
+pip3 install -r requirements.txt --break-system-packages
+```
 
-# Verify
-docker --version
-docker compose version
+### Week 1 — Collect threat data
+```bash
+cd Week1
+nano .env          # add your API keys
+python3 feed_collector.py
+```
+
+### Week 2 — Normalize + push to Kibana
+```bash
+cd Week2
+cp ../Week1/data/raw_indicators.json data/
+python3 normalizer.py
+sudo docker compose up -d
+python3 elk_pusher.py
+# Open Kibana: http://localhost:5601
+```
+
+### Week 3 — Block malicious IPs
+```bash
+cd Week3
+cp ../Week2/data/normalized_indicators.json data/
+python3 policy_enforcer.py
+python3 rollback.py list
+```
+
+### Week 4 — Alerts and testing
+```bash
+cd Week4
+python3 alert_system.py
+python3 test_suite.py
 ```
 
 ---
 
-## 🚀 Quick Start (Local)
+## 📊 OSINT Sources
 
-### Step 1 — Clone the repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/tip-platform.git
-cd tip-platform
-```
-
-### Step 2 — Configure environment variables
-
-```bash
-cp .env.example .env
-nano .env      # or: vim .env / code .env
-```
-
-Edit the `.env` file:
-```
-MONGO_PASSWORD=your_strong_password_here
-OTX_API_KEY=your_otx_key          # Free at otx.alienvault.com
-ABUSEIPDB_API_KEY=your_key        # Free at abuseipdb.com
-VIRUSTOTAL_API_KEY=your_key       # Free at virustotal.com (optional)
-ENFORCER_DRY_RUN=true             # Set false when ready for live blocking
-```
-
-> **Note:** The platform works without API keys using free public blocklists. Add keys to enrich with more threat data.
-
-### Step 3 — Start all services
-
-```bash
-docker compose up -d
-```
-
-Watch startup progress:
-```bash
-docker compose logs -f
-```
-
-### Step 4 — Verify services are healthy
-
-```bash
-docker compose ps
-
-# Expected output:
-# tip_mongodb        running (healthy)
-# tip_elasticsearch  running (healthy)
-# tip_aggregator     running
-# tip_enforcer       running
-# tip_dashboard      running
-# tip_kibana         running
-# tip_nginx          running
-```
-
-### Step 5 — Import Kibana dashboards
-
-```bash
-chmod +x scripts/import-kibana.sh
-bash scripts/import-kibana.sh
-```
+| Source | Data Type | API Key |
+|--------|-----------|---------|
+| AlienVault OTX | IPs, Domains, URLs | Free |
+| VirusTotal | Malicious IPs | Free |
+| AbuseIPDB | Reported IPs | Free |
+| Feodo Tracker | Botnet C2 IPs | Not needed |
+| URLhaus | Malware URLs | Not needed |
 
 ---
 
-## 🌐 Service URLs
+## 🎯 Risk Scoring
 
-| Service | URL | Description |
-|---|---|---|
-| Nginx Gateway | http://localhost:80 | Main entry point |
-| Dashboard API | http://localhost:8080/api/stats | TIP REST API |
-| Kibana | http://localhost:5601 | SIEM dashboard |
-| Elasticsearch | http://localhost:9200 | Search engine |
-| MongoDB | localhost:27017 | Database |
+| Score | Severity | Action |
+|-------|----------|--------|
+| 80 – 100 | 🔴 HIGH | Auto-blocked by enforcer |
+| 50 – 79 | 🟡 MEDIUM | Logged and monitored |
+| 0 – 49 | 🟢 LOW | Logged only |
 
 ---
 
-## 📊 API Endpoints
+## 🛠️ Technology Stack
 
-```bash
-# Platform stats
-curl http://localhost:8080/api/stats
-
-# List indicators (paginated)
-curl "http://localhost:8080/api/indicators?type=ip&min_risk=70&page=1"
-
-# List blocked IPs
-curl "http://localhost:8080/api/indicators?blocked=true"
-
-# Audit log
-curl http://localhost:8080/api/audit
-
-# Rollback a blocked IP (requires auth token)
-curl -X POST http://localhost:8080/api/rollback \
-  -H "Authorization: Bearer YOUR_JWT_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{"ip": "1.2.3.4"}'
-```
+| Component | Technology | Version |
+|-----------|------------|---------|
+| Language | Python | 3.11 |
+| SIEM | Elasticsearch + Kibana | 8.13 |
+| Database | MongoDB | 7.0 |
+| Firewall | Linux iptables | - |
+| Infrastructure | Docker + Compose | - |
+| Version Control | Git + GitHub | - |
 
 ---
 
-## 🔁 SOC Analyst — Rollback Blocked IPs
+## 🔑 API Keys Setup
 
-If an automated block is a false positive, use the CLI rollback tool inside the enforcer container:
-
-```bash
-# List all currently blocked IPs
-docker exec tip_enforcer python rollback.py --list-blocked
-
-# Roll back a specific IP
-docker exec tip_enforcer python rollback.py --ip 1.2.3.4
-
-# Mark as false positive (prevents future blocking)
-docker exec tip_enforcer python rollback.py --false-positive 1.2.3.4
+Create `Week1/.env` file:
 ```
+OTX_API_KEY=your_key_here
+VIRUSTOTAL_API_KEY=your_key_here
+ABUSEIPDB_API_KEY=your_key_here
+```
+
+Get free keys from:
+- OTX → https://otx.alienvault.com
+- VirusTotal → https://www.virustotal.com
+- AbuseIPDB → https://www.abuseipdb.com
+
+> ⚠️ Never commit your `.env` file to GitHub!
 
 ---
 
-## 🧪 Running Tests
-
-```bash
-# Install test dependencies
-pip install pytest pymongo requests python-dotenv colorlog
-
-# Run unit tests
-pytest tests/ -v
-```
-
----
-
-## 🐛 Common Issues
-
-| Problem | Solution |
-|---|---|
-| `Elasticsearch` keeps restarting | Increase Docker memory to ≥ 4 GB in Docker Desktop → Settings → Resources |
-| `enforcer` exits immediately | Run `docker compose logs tip_enforcer` — check iptables permissions. Ensure `privileged: true` is set. |
-| No indicators collected | Check API keys in `.env`. The blocklist feed works without any keys. |
-| MongoDB auth fails | Ensure `MONGO_PASSWORD` in `.env` matches what was set on first boot. Run `docker compose down -v` to reset volumes. |
-
----
-
-## 📤 Uploading to GitHub
-
-### Step 1 — Create a new repository on GitHub
-
-Go to https://github.com/new and create a repository named `tip-platform`. **Do NOT initialize it with a README.**
-
-### Step 2 — Initialize git locally
-
-```bash
-cd tip-platform
-
-git init
-git add .
-git commit -m "feat: initial TIP platform implementation"
-```
-
-### Step 3 — Connect and push
-
-```bash
-git remote add origin https://github.com/YOUR_USERNAME/tip-platform.git
-git branch -M main
-git push -u origin main
-```
-
-### Step 4 — Protect secrets (IMPORTANT)
-
-Never commit your `.env` file — it is already in `.gitignore`. If you accidentally committed API keys:
-```bash
-git rm --cached .env
-git commit -m "chore: remove .env from tracking"
-```
-
-Use **GitHub Secrets** for CI/CD (already configured in `.github/workflows/ci.yml`):
-- Go to your repo → Settings → Secrets and variables → Actions
-- Add: `OTX_API_KEY`, `ABUSEIPDB_API_KEY`, `VIRUSTOTAL_API_KEY`
-
----
-
-## 🛑 Stopping the Platform
-
-```bash
-# Stop containers (preserves data volumes)
-docker compose down
-
-# Stop AND remove all data volumes (full reset)
-docker compose down -v
-```
-
----
-
-## 📋 Four-Week Roadmap Checklist
+## 🗺️ Project Roadmap
 
 | Week | Task | Status |
-|---|---|---|
-| 1 | Python OSINT feed scripts (OTX, VirusTotal, AbuseIPDB, Blocklists) | ✅ |
-| 1 | MongoDB schema + deduplication | ✅ |
-| 2 | Indicator normalization with risk scoring | ✅ |
-| 2 | Elasticsearch + Kibana SIEM integration | ✅ |
-| 3 | Dynamic Policy Enforcer daemon (iptables + ipset) | ✅ |
-| 3 | Webhook alerting | ✅ |
-| 4 | Rollback / false-positive CLI tool | ✅ |
-| 4 | Kibana dashboard pre-built objects | ✅ |
-| 4 | GitHub Actions CI/CD | ✅ |
-| 4 | REST API for SOC dashboard | ✅ |
+|------|------|--------|
+| Week 1 | OSINT Data Collection | ✅ Complete |
+| Week 2 | Normalization + ELK SIEM | ✅ Complete |
+| Week 3 | Dynamic Policy Enforcer | ✅ Complete |
+| Week 4 | Alert System + Test Suite | ✅ Complete |
 
 ---
 
-## ⚠️ Security Notice
+## 🚀 Future Improvements
 
-The `enforcer` service requires `privileged: true` and `network_mode: host` to modify the host's firewall rules. **Deploy this only on a dedicated security host.** Set `ENFORCER_DRY_RUN=true` during development to simulate without affecting real firewall rules.
+- MongoDB integration for persistent long-term storage
+- Scheduled feed collection every 6 hours via cron
+- REST API for SOC dashboard integration
+- Email and Slack alerts for HIGH risk blocks
+- GeoIP world map visualization in Kibana
+- Machine learning anomaly detection on threat patterns
+
+---
+
+## 📄 License
+
+Licensed under the **Apache License 2.0** — see [LICENSE](LICENSE) for details.
+
+---
+
+## 👤 Author
+
+**Internship Project — Finance & Banking Cybersecurity**
+Threat Intelligence Platform (TIP) | Advanced Security Engineering
+GitHub: [@Jyot-tipsoc](https://github.com/Jyot-tipsoc)
+
+> ⚠️ `DRY_RUN = True` is set by default in `policy_enforcer.py` for safety.
+> Only disable on a dedicated security VM.
